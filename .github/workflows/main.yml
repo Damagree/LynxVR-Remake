@@ -12,6 +12,7 @@ jobs:
       matrix:
         targetPlatform:
           - Android # Build an Android .apk standalone app.
+          - iOS # Build an iOS player.
     steps:
       - uses: actions/checkout@v2
         with:
