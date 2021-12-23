@@ -18,6 +18,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Sends messages to gazed GameObject.
@@ -26,6 +27,11 @@ public class CameraPointer : MonoBehaviour
 {
     private const float _maxDistance = 10;
     private GameObject _gazedAtObject = null;
+
+    [SerializeField] float _gazeFinishTime = 1f;
+    [SerializeField] float _gazeTime;
+    [SerializeField] Image _loadingRecticle;
+    [SerializeField] string _buttonTag = "World Button";
 
     /// <summary>
     /// Update is called once per frame.
@@ -37,26 +43,37 @@ public class CameraPointer : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance))
         {
-            // GameObject detected in front of the camera.
-            if (_gazedAtObject != hit.transform.gameObject)
+            _gazedAtObject = hit.transform.gameObject;
+            if (_gazedAtObject.CompareTag(_buttonTag))
             {
-                // New GameObject.
-                _gazedAtObject?.SendMessage("OnPointerExit");
-                _gazedAtObject = hit.transform.gameObject;
-                _gazedAtObject.SendMessage("OnPointerEnter");
+                OnGazeEnter(_gazedAtObject.GetComponent<Button>());
+            }
+            else
+            {
+                OnGazeExit();
+                _gazedAtObject = null;
             }
         }
         else
         {
-            // No GameObject detected in front of the camera.
-            _gazedAtObject?.SendMessage("OnPointerExit");
-            _gazedAtObject = null;
+            OnGazeExit();
         }
 
-        // Checks for screen touches.
-        if (Google.XR.Cardboard.Api.IsTriggerPressed)
+    }
+
+    public void OnGazeEnter(Button gazedButton)
+    {
+        _gazeTime += Time.deltaTime;
+        _loadingRecticle.fillAmount = _gazeTime / _gazeFinishTime;
+        if (_gazeTime >= _gazeFinishTime)
         {
-            _gazedAtObject?.SendMessage("OnPointerClick");
+            gazedButton.onClick.Invoke();
         }
+    }
+
+    public void OnGazeExit()
+    {
+        _loadingRecticle.fillAmount = 0;
+        _gazeTime = 0;
     }
 }
