@@ -32,6 +32,7 @@ public class CameraPointer : MonoBehaviour
     [SerializeField] float _gazeTime;
     [SerializeField] Image _loadingRecticle;
     [SerializeField] string _buttonTag = "World Button";
+    bool cameraPointerActive = true;
 
     /// <summary>
     /// Update is called once per frame.
@@ -65,9 +66,10 @@ public class CameraPointer : MonoBehaviour
     {
         _gazeTime += Time.deltaTime;
         _loadingRecticle.fillAmount = _gazeTime / _gazeFinishTime;
-        if (_gazeTime >= _gazeFinishTime)
+        if (_gazeTime >= _gazeFinishTime && cameraPointerActive)
         {
             gazedButton.onClick.Invoke();
+            cameraPointerActive = false;
         }
     }
 
@@ -75,5 +77,6 @@ public class CameraPointer : MonoBehaviour
     {
         _loadingRecticle.fillAmount = 0;
         _gazeTime = 0;
+        cameraPointerActive = true;
     }
 }

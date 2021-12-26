@@ -25,11 +25,19 @@ public class MoveOnEvent : MonoBehaviour
 
     public void DoLerpMove(Transform target)
     {
-        transform.position = Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, target.position, interpolates), speed);
-        Debug.Log("Distance: " + Vector3.Distance(transform.position, Target.position));
-        if (transform.position == Vector3.MoveTowards(transform.position, Vector3.Lerp(transform.position, target.position, interpolates), speed))
+        Target = target;
+        StartCoroutine(Lerping());
+    }
+
+    IEnumerator Lerping()
+    {
+        while (Vector3.Distance(transform.position, Target.position) > 0.05f)
         {
-            LerpMove = false;
+            transform.position = Vector3.Lerp(transform.position, target.position, interpolates * Time.deltaTime);
+            yield return null;
         }
+        LerpMove = false;
+
+        Debug.Log("Reached the Target");
     }
 }

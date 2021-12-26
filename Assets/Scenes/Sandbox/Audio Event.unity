@@ -724,22 +724,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 725491537}
-        m_TargetAssemblyTypeName: MoveOnEvent, Assembly-CSharp
-        m_MethodName: set_Target
-        m_Mode: 2
+      - m_Target: {fileID: 1666402667}
+        m_TargetAssemblyTypeName: MaleFemaleVoice, Assembly-CSharp
+        m_MethodName: MaleVoice
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 442534817}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 725491537}
-        m_TargetAssemblyTypeName: MoveOnEvent, Assembly-CSharp
-        m_MethodName: set_LerpMove
-        m_Mode: 6
+      - m_Target: {fileID: 1301322247}
+        m_TargetAssemblyTypeName: VoiceManager, Assembly-CSharp
+        m_MethodName: PlayVoiceOver
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -799,17 +799,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &725491537 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 725491537, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
-  m_PrefabInstance: {fileID: 7989876454685416528}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fd8ae0218495064ca573518b888dc3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &750215851
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,22 +975,22 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 725491537}
-        m_TargetAssemblyTypeName: MoveOnEvent, Assembly-CSharp
-        m_MethodName: set_Target
-        m_Mode: 2
+      - m_Target: {fileID: 1666402667}
+        m_TargetAssemblyTypeName: MaleFemaleVoice, Assembly-CSharp
+        m_MethodName: FemaleVoice
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 45865126}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 725491537}
-        m_TargetAssemblyTypeName: MoveOnEvent, Assembly-CSharp
-        m_MethodName: set_LerpMove
-        m_Mode: 6
+      - m_Target: {fileID: 1301322247}
+        m_TargetAssemblyTypeName: VoiceManager, Assembly-CSharp
+        m_MethodName: PlayVoiceOver
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1061,6 +1050,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 10, z: 0.1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1301322246 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+  m_PrefabInstance: {fileID: 6180618921578698628}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301322247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+  m_PrefabInstance: {fileID: 6180618921578698628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d1629a0cb78704597d380461643300, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1553453856
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd8ae0218495064ca573518b888dc3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interpolates: 0.1
+  interpolates: 5
   speed: 0.1
 --- !u!1 &1619992881
 GameObject:
@@ -1204,6 +1209,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1666402666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+  m_PrefabInstance: {fileID: 18380346338440441}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1666402667 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 18380345779600786, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+  m_PrefabInstance: {fileID: 18380346338440441}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89bb47eb601e75a4cacedc828b06a914, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1782059219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1232,6 +1253,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1856730532}
+  - {fileID: 1301322246}
+  - {fileID: 1666402666}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1397,6 +1420,144 @@ Transform:
   m_Father: {fileID: 1782059220}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &18380346338440441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1782059220}
+    m_Modifications:
+    - target: {fileID: 18380345779600784, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_Name
+      value: Voice F/M Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 18380345779600787, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d0eae7fb4a6780429932a1526c36808, type: 3}
+--- !u!1001 &6180618921578698628
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1782059220}
+    m_Modifications:
+    - target: {fileID: 6180618922863168897, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_Name
+      value: Voice Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168898, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1553453861}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: femaleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1553453861}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: femaleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1553453861}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 442534817}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: femaleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 45865126}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: femaleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 442534817}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
 --- !u!1001 &7989876454685416528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1404,6 +1565,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1619992882}
     m_Modifications:
+    - target: {fileID: 725491537, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
+      propertyPath: interpolates
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7989876454067667712, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
       propertyPath: m_Name
       value: Player
