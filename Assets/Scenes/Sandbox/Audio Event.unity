@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -251,6 +251,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &202161935 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 725491537, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
+  m_PrefabInstance: {fileID: 7989876454685416528}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fd8ae0218495064ca573518b888dc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &279483207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,9 +1544,33 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 86838af7b40a4c8438251903a170761d, type: 3}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].timerBeforeNext
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: maleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1553453861}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 202161935}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1545,9 +1580,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1553453861}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DoLerpMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MoveOnEvent, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: maleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 442534817}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 45865126}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -1556,6 +1607,10 @@ PrefabInstance:
       propertyPath: femaleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 442534817}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: maleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Transform, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
 --- !u!1001 &7989876454685416528
