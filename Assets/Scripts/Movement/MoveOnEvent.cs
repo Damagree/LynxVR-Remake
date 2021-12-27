@@ -7,7 +7,7 @@ public class MoveOnEvent : MonoBehaviour
 
     [Tooltip("Linearly interpolates between two points")]
     [SerializeField] private float interpolates = 0.1f;
-    [SerializeField] private float speed = 0.1f;
+    //[SerializeField] private float speed = 0.1f;
 
     private bool lerpMove = false;
     private Transform target;

@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.11.0/Hello Cardboard/Scenes/VrMode.unity
-    guid: 4812ec05e87b8414abcdfe0d625c0e60
+    path: Assets/Scenes/Main Menu.unity
+    guid: c7b26e5017546c541b82b5f0ab64e6ec
+  - enabled: 1
+    path: Assets/Scenes/Bedroom.unity
+    guid: 7dd9e1fe737a7d448b3151d63d63019d
+  - enabled: 1
+    path: Assets/Scenes/Park.unity
+    guid: 8f0c8228191c01f47bbd9deaf4a3d1b8
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d7882b9724bcaf54f8fdcc4df63cc5ff, type: 2}

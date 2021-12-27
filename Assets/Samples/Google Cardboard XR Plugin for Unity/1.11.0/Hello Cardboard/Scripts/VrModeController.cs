@@ -38,13 +38,13 @@ public class VrModeController : MonoBehaviour
     /// <summary>
     /// Gets a value indicating whether the screen has been touched this frame.
     /// </summary>
-    private bool _isScreenTouched
-    {
-        get
-        {
-            return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
-        }
-    }
+    //private bool _isScreenTouched
+    //{
+    //    get
+    //    {
+    //        return Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began;
+    //    }
+    //}
 
     /// <summary>
     /// Gets a value indicating whether the VR mode is enabled.
@@ -88,10 +88,10 @@ public class VrModeController : MonoBehaviour
     {
         if (_isVrModeEnabled)
         {
-            if (Api.IsCloseButtonPressed)
-            {
-                ExitVR();
-            }
+            //if (Api.IsCloseButtonPressed)
+            //{
+            //    ExitVR();
+            //}
 
             if (Api.IsGearButtonPressed)
             {
@@ -100,35 +100,35 @@ public class VrModeController : MonoBehaviour
 
             Api.UpdateScreenParams();
         }
-        else
-        {
-            // TODO(b/171727815): Add a button to switch to VR mode.
-            if (_isScreenTouched)
-            {
-                EnterVR();
-            }
-        }
+        //else
+        //{
+        //    // TODO(b/171727815): Add a button to switch to VR mode.
+        //    if (_isScreenTouched)
+        //    {
+        //        EnterVR();
+        //    }
+        //}
     }
 
     /// <summary>
     /// Enters VR mode.
     /// </summary>
-    private void EnterVR()
-    {
-        StartCoroutine(StartXR());
-        if (Api.HasNewDeviceParams())
-        {
-            Api.ReloadDeviceParams();
-        }
-    }
+    //private void EnterVR()
+    //{
+    //    StartCoroutine(StartXR());
+    //    if (Api.HasNewDeviceParams())
+    //    {
+    //        Api.ReloadDeviceParams();
+    //    }
+    //}
 
     /// <summary>
     /// Exits VR mode.
     /// </summary>
-    private void ExitVR()
-    {
-        StopXR();
-    }
+    //private void ExitVR()
+    //{
+    //    StopXR();
+    //}
 
     /// <summary>
     /// Initializes and starts the Cardboard XR plugin.

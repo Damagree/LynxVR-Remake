@@ -16,7 +16,9 @@ public class VoiceOver
 public class VoiceManager : MonoBehaviour
 {
     [SerializeField] VoiceEntity voiceEntity;
+    [SerializeField] bool playOnStart = true;
     [SerializeField] bool autoPlayNextClip;
+    [SerializeField] float delayBeforePlay = 2f;
 
     [Header("Audio Clip Setting"), Space(5)]
     [SerializeField] AudioSource audioSource;
@@ -29,6 +31,8 @@ public class VoiceManager : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         currentIdx = 0;
+        if (playOnStart)
+            StartCoroutine(DelayBeforeStart());
     }
 
     public void PlayVoiceOver()
@@ -122,7 +126,11 @@ public class VoiceManager : MonoBehaviour
                 Debug.LogError("There's no more Audio Clip on the list");
             }
         }
-        
-        
+    }
+
+    IEnumerator DelayBeforeStart()
+    {
+        yield return new WaitForSeconds(delayBeforePlay);
+        PlayVoiceOver();
     }
 }
