@@ -4613,7 +4613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: maleVoiceOvers.Array.data[1].audioClip
@@ -4630,7 +4630,7 @@ PrefabInstance:
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.data[2].audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 86838af7b40a4c8438251903a170761d, type: 3}
+      objectReference: {fileID: 8300000, guid: 4f3f5cd7ef9e98f4aa75c8be27261b14, type: 3}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: maleVoiceOvers.Array.data[0].timerBeforeNext
       value: 1
@@ -4648,8 +4648,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
+      propertyPath: femaleVoiceOvers.Array.data[0].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.data[1].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6180618922863168899, guid: ecce00822b0dd564a9c5ea763650e131, type: 3}
       propertyPath: femaleVoiceOvers.Array.data[2].eventAfterAudioFinish.m_PersistentCalls.m_Calls.Array.size
@@ -5834,6 +5838,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7989876454769828860, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7989876455733616456, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.488
@@ -5849,29 +5857,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7989876454067667716, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
   m_PrefabInstance: {fileID: 1767074099}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1767074101 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7989876455733616453, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
-  m_PrefabInstance: {fileID: 1767074099}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1767074102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767074101}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 2
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 0
 --- !u!1001 &1788294434
 PrefabInstance:
   m_ObjectHideFlags: 0
