@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b33a4b561b3ad00488324b0925a69fc2, type: 3}
   m_Name: Voice Entity
   m_EditorClassIdentifier: 
-  voiceChoosen: 1
+  voiceChoosen: 0
