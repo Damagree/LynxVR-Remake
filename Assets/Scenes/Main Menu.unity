@@ -523,6 +523,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176470544}
   m_CullTransparentMesh: 1
+--- !u!20 &309470881 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 614093278, guid: 3e0017ce0d513ad4bae8b6e969e657da, type: 3}
+  m_PrefabInstance: {fileID: 327113619}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &327113619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2405,10 +2410,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1036259565}
     m_Modifications:
-    - target: {fileID: 42273384241005541, guid: 7de36dbc5a7e41a41810d30f144d668f, type: 3}
-      propertyPath: m_Volume
-      value: 0.03
-      objectReference: {fileID: 0}
     - target: {fileID: 1727272448189299286, guid: 7de36dbc5a7e41a41810d30f144d668f, type: 3}
       propertyPath: m_Name
       value: BGM
@@ -2471,6 +2472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1036259565}
     m_Modifications:
+    - target: {fileID: 2294180824180146478, guid: cecb865c43850304fb023f0317394643, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 309470881}
     - target: {fileID: 8313779889184129971, guid: cecb865c43850304fb023f0317394643, type: 3}
       propertyPath: m_Name
       value: Scene Loader

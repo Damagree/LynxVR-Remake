@@ -57,6 +57,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Loading Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851604, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851604, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_SortingOrder
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851604, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851604, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -154485219
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851604, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_AdditionalShaderChannelsFlag
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2294180823612851605, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -140,6 +160,10 @@ PrefabInstance:
     - target: {fileID: 2294180823612851605, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2294180823612851607, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4d09a79408ebe547ac746e323e14a07, type: 3}

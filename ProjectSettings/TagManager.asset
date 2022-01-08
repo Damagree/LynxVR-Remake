@@ -42,3 +42,6 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Recticle
+    uniqueID: 4140482077
+    locked: 0
